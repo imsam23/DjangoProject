@@ -1,0 +1,6 @@
+#when we click submit button then it will go welcome.html page
+<form action="welcome.html" method="post">
+    {% csrf_token %}
+    {{ form.as_p}}
+    <input type="submit" value="Submit" />
+</form>
